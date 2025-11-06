@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
+    supportFile: false
   },
   reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
@@ -13,4 +14,4 @@ module.exports = defineConfig({
     html: true,
     json: true
   }
-})
+});
